@@ -23,6 +23,7 @@ const NewItemBox = (props) => {
       value={text}
       onChange={(e) => setText(e.target.value)}
       onKeyPress={handleKeyPress}
+      maxLength={ 35 }
     />
   );
 };
