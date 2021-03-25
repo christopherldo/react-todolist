@@ -2,8 +2,6 @@ import { createGlobalStyle } from 'styled-components'
 import { light } from '../themes'
 
 export default createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-  
   * {
     padding: 0;
     margin: 0;
@@ -32,6 +30,8 @@ export default createGlobalStyle`
     --text-color: ${props => props.theme.text};
     --container-color: ${props => props.theme.container};
     --input-color: ${props => props.theme.input};
+    --completed-color: ${props => props.theme.completed};
+    --order-color: ${props => props.theme.order};
   }
 
   html {
